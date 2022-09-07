@@ -146,7 +146,7 @@
   border-bottom: solid 2px #e8ebe4;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   .contact-section {
     flex: 0 0 40vw;
   }
