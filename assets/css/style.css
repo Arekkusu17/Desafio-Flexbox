@@ -4,61 +4,39 @@
 }
 
 .contact-section {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   flex: 0 0 25vw;
   height: 100vh;
   background-color: #fff;
+  overflow-y: auto;
 }
 
-.main-section {
-  display: flex;
-  flex: 0 0 75vw;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #e8ebe4;
-}
-
-.logo {
-  height: 270px;
-}
-
-.tiny-thumbnail {
-  border-radius: 50%;
-  height: 60px;
-}
-
-.normal-thumbnail {
-  border-radius: 50%;
-  height: 55px;
-}
+/* USER */
 
 .user {
   display: flex;
-
   flex-direction: row;
   justify-content: space-between;
 }
 
 .user-status {
   display: flex;
-
+  margin: 0.5rem 1rem;
   flex-direction: row;
   align-items: center;
   padding-left: 10px;
 }
 
 .user-info {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   margin-left: 1rem;
+  line-height: 50%;
 }
 
 .user-info h3 {
-  justify-self: flex-end;
+  margin-top: 15px;
 }
 
 .menu-icons {
@@ -72,12 +50,13 @@
   padding-left: 15px;
 }
 
+/* NEW CHAT BUTTON */
 .new-chat {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  padding: 2.2rem;
+  padding: 2rem;
 }
 
 .btn {
@@ -95,8 +74,58 @@
   background-color: #bec1bb;
 }
 
-.xsmall-font {
-  font-size: 10px;
+/* PROFILE THUMBNAILS */
+
+.tiny-thumbnail {
+  border-radius: 50%;
+  height: 60px;
+}
+
+.normal-thumbnail {
+  border-radius: 50%;
+  height: 55px;
+}
+
+/* CHATS SECTION */
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.contact-chat {
+  margin-left: 1rem;
+  line-height: 0.4rem;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+  font-family: "Oxygen", sans-serif;
+  display: flex;
+  flex: 0 0 75vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e8ebe4;
+}
+
+.logo {
+  max-height: 20%;
+}
+
+.main-section p {
+  text-align: center;
+  width: 50%;
+}
+
+/* FONTS SIZE */
+
+.xsmall-text {
+  font-size: 12px;
+  color: #828485;
 }
 
 .small-font {
@@ -109,4 +138,44 @@
 
 .large-font {
   font-size: 45px;
+}
+
+/* GRAY BORDER */
+
+.bottom-border-gray {
+  border-bottom: solid 2px #e8ebe4;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-section {
+    flex: 0 0 40vw;
+  }
+
+  .main-section {
+    flex: 0 0 60vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-section {
+    flex: 0 0 50vw;
+  }
+
+  .main-section {
+    flex: 0 0 50vw;
+  }
+
+  .main-section h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .contact-section {
+    flex: 0 0 100vw;
+  }
+
+  .main-section {
+    display: none;
+  }
 }
